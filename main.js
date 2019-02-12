@@ -30,14 +30,9 @@ var app = new Vue({
       this.videos.push(obj);
     },
 
-    deleteVideo: function(name) {
+    deleteVideo: function(n) {
       console.log("Deleting video");
-      for (let t of this.videos) {
-        if (t.title == name) {
-          this.videos.splice(this.videos.indexOf(t), 1);
-        }
-      }
-      this.videos.slice(this.videos.title);
+      this.videos.splice(n, 1);
     }
   }
 });
